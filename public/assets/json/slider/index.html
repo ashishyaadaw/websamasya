@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JSON CRUD Panel</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- Latest compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+		<!-- Latest compiled JavaScript -->
+		<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="upload_slide" class="row p-4">
+				<div class="alert alert-primary" role="alert">
+					<h1 class="text-uppercase text-center">Add Slides</h1>
+				</div>
+				<div class="container">
+					<form action="crud.php" method="POST" enctype="multipart/form-data">
+						<div class="form-row">
+						
+							<div class="col-6 form-group">
+								<label for="file">Choose a file:</label>
+								<input
+									type="file"
+									name="file"
+									id="file"
+									accept="image/*"
+									class="form-control"
+								/>
+							</div>
+								<div class="col-6 form-group">
+								<label for="slideURL">Slide's Title :</label>
+								<input
+									type="text"
+									name="slideTitle"
+									id="slideTitle"
+									class="form-control"
+								/>
+							</div>
+							<!--<b class="text-center fw-900">OR</b>-->
+							<div class="col-6 form-group">
+								<label for="slideUrl">Slide Paragraph:</label>
+								<textarea
+									type="text"
+									name="slideParagraph"
+									id="slideParagraph"
+									class="form-control"
+								></textarea>
+							</div>
+						</div>
+						<!--<div class="form-group">-->
+						<!--	<label for="slideHead">slide Heading :</label>-->
+						<!--	<textarea-->
+						<!--		class="form-control"-->
+						<!--		type="text"-->
+						<!--		name="slideHead"-->
+						<!--		id="slideHead"-->
+						<!--		required-->
+						<!--	></textarea>-->
+						<!--</div>-->
+						<!--<div class="form-group">-->
+						<!--	<label for="slide">slide/Message :</label>-->
+						<!--	<textarea-->
+						<!--		class="form-control"-->
+						<!--		type="text"-->
+						<!--		name="slide"-->
+						<!--		id="slide"-->
+						<!--		required-->
+						<!--	></textarea>-->
+						<!--</div>-->
+						<div class="">
+							<label class="">
+								 Are you to Display on slide Section ? :
+							</label>
+							<label for="visibility" class="-label"> YES </label>
+							<input
+								type="radio"
+								class="-input"
+								 for="visibility"
+								name="visibility"
+								id="visibilityTrue"
+								value="true"
+								required
+							/>
+							<label for="visibility" class="-label"> NO </label>
+							<input
+								type="radio"
+								class="-input"
+								 for="visibility"
+								name="visibility"
+								id="visibilityFalse"
+								value="false"
+							/>
+						</div>
+						<button
+							class="btn btn-warning text-center m-1"
+							type="submit"
+							name="create"
+						>
+							Upload
+						</button>
+						<a href="crud.php" class="btn btn-success text-center disable m-1">
+							Edit
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function setBlock(id) {
+				document.getElementById(id).style.display = "block";
+			}
+			function setNone(id) {
+				document.getElementById(id).style.display = "none";
+			}
+		</script>
+	</body>
+</html>

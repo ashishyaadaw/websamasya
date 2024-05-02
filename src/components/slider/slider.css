@@ -1,0 +1,272 @@
+/* Add some basic styling to the slider container and images */
+#slider-container {
+  width: 100%;
+
+  box-shadow: 0px -4px 20px -3px rgb(82, 80, 77);
+  /* box-shadow: 0px 3px 12px rgb(82, 80, 77); */
+  background-color: rgb(97, 96, 96);
+  padding: 0px;
+  height: 400px;
+
+  margin: 5px 5px 5px 5px;
+  /* margin-bottom: 10px; */
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  #slider-container {
+    height: 315px;
+  }
+  #slideDetails {
+    font-size: 12px;
+    line-height: 1px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #slider-container {
+    height: 315px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #slider-container {
+    height: 315px;
+    width: 404px;
+  }
+  .screen-text {
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 394px) {
+  #slider-container {
+    height: 315px;
+    width: 382px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #slider-container {
+    height: 315px;
+    width: 365px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #slider-container {
+    height: 315px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  #slider-container {
+    height: 315px;
+    width: 270px;
+  }
+}
+.screen-text {
+  position: absolute;
+  top: 85%;
+  font-size: 15px;
+  /* left: 19px; */
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.433);
+  color: white;
+}
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classNamees */
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.title span {
+  font-size: 0.85em;
+  color: var(--clr-primary-5);
+  margin-right: 1rem;
+  font-weight: 700;
+}
+.section-center {
+  margin: 0;
+  padding: 0px;
+  border-radius: 6px;
+  /* margin-top: 4rem; */
+  width: 100%;
+  height: 400px;
+  /* max-width: 800px; */
+  /* text-align: center; */
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+article h4 {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  margin-bottom: 0.25rem;
+}
+.title {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: var(--clr-grey-3);
+}
+.text {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+  color: var(--clr-grey-5);
+}
+.icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: var(--clr-primary-5);
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(180, 171, 171, 0.493);
+  color: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.prev:hover,
+.next:hover {
+  background: var(--clr-primary-5);
+}
+.prev {
+  left: 19px;
+}
+.next {
+  right: 10px;
+}
+@media (min-width: 800px) {
+  .text {
+    max-width: 45em;
+  }
+  .prev,
+  .next {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+article {
+  position: absolute;
+  top: 0;
+  /* padding-left: 17px; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+.imageDisplayer {
+  width: inherit;
+  height: auto;
+}

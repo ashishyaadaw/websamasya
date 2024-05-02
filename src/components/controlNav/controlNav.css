@@ -1,0 +1,20 @@
+.login-btn{
+
+}
+.signup-btn{
+    margin-top: 5px;
+    background-color: red;
+    color: white;
+    border: red 1px solid;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+.signup-btn:hover {
+    color: black;
+    background-color: transparent;
+    border: red 1px solid;
+}
+
+.logged{
+
+}

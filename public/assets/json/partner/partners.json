@@ -1,0 +1,38 @@
+[
+  {
+    "nmae": "Synery Cancer Hospital",
+    "imageSrc": "/YPAlOGO.png",
+    "href": "/",
+    "visibility": true
+  },
+  {
+    "nmae": "Aishpara",
+    "imageSrc": "/auth/upload/our-partner/download1.jpg",
+    "href": "/",
+    "visibility": true
+  },
+  {
+    "nmae": "Manav Seva Sansthan- Seva",
+    "imageSrc": "/auth/upload/our-partner/unnamed.png",
+    "href": "/",
+    "visibility": true
+  },
+  {
+    "nmae": "Gorakhpur Private Bus Owners Welfare Association",
+    "imageSrc": "/assets/json/partner/uploads/IMG_20231221_000724.jpg",
+    "href": "",
+    "visibility": true
+  },
+  {
+    "nmae": "DP Moters ",
+    "imageSrc": "/assets/json/partner/uploads/IMG_20231221_002214.jpg",
+    "href": "http://www.dpmotorsgkp.com/",
+    "visibility": true
+  },
+  {
+    "nmae": "Digvijay Nath PG College , Gorakhpur",
+    "imageSrc": "/assets/json/partner/uploads/LogoDVNPG.png",
+    "href": "https://www.dnpgcollege.edu.in/",
+    "visibility": true
+  }
+]

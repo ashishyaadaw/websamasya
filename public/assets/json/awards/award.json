@@ -1,0 +1,21 @@
+[
+	{
+        "image": "\/slide_images\/youth-icon-awards.jpg",
+        "title": "YOUTH ICON AWARDS - UTTAR PRADESH",
+        "quote": "President of Youth Power Association, Shri Shiv Prasad Shukla ji received the best youth award of Uttar Pradesh for his special contribution in the field of social service, Vivekananda Youth Award, from the hands of the Chief Minister of Uttar Pradesh, Honorable Yogi Adityanath Ji Maharaj. During this, Honorable Minister of State for Sports and Youth Welfare Department, Uttar Pradesh Mr. Girish Chandra Yadav, Honorable Minister of Technical Education Uttar Pradesh Mr. Ashish Patel, Chief Secretary of Sports and Youth Welfare Department IAS Alok Kumar, Infrastructure and Industrial Development Commissioner Mr. Manoj Kumar Singh. , Director General Youth Welfare Department IAS Shri Suhas LY was in the dignified presence.",
+        "visibility": true
+    }, {
+        "image": "\/slide_images\/awards-shiv-sir.jpg",
+        "title": "Big Gorakhpur pride awards",
+        "quote": "Youth Power Association selected for Gorakhpur Pride Award in NGO category by 92.7 BIG FM Gorakhpur. Youth Power Association President Shri Shiv Prasad Shukla ji was honored by the Mayor of Municipal Corporation Gorakhpur, Dr. Manglesh Srivastava ji and the famous astrologer of Purvanchal, Pandit Narendra Upadhyay ji.",
+        "visibility": true
+    },
+	{
+		"id": 3,
+		"image": "/assets/json/awards/uploads/abhiyan-theater.jpg",
+		"title": "",
+		"quote": " ",
+
+		"visibility": true
+	}
+]

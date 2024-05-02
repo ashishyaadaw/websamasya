@@ -1,0 +1,277 @@
+body {
+  background-color: #1f1e1e;
+}
+header {
+  user-select: none;
+  background-color: #2a182e;
+  color: white;
+}
+.header-div {
+  z-index: 3;
+  background-color: #ffffff8c;
+}
+.navbar-logo {
+  height: 40px;
+  float: right;
+}
+.navbar-logo-mobile {
+  height: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.created-by-logo {
+  background-color: rgba(255, 255, 255, 0.884);
+  border: 1px solid orangered;
+  border-radius: 5px;
+  width: 190px;
+  text-align: left;
+  height: 38px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+.created-by-logo img {
+  position: absolute;
+  margin-top: -5px;
+  height: 34px;
+}
+.footer-logo {
+  height: 40px;
+}
+.nav-link-sm {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  /* font-weight: 500; */
+}
+
+.list-icon {
+  height: 18px;
+  margin-left: -3px;
+}
+.mobile-icon-link-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  padding: 10px;
+  margin-right: 60px;
+}
+.mobile-icon-link-right li {
+  list-style: none;
+  float: right;
+  padding-right: 10px;
+  display: inline;
+}
+.search-bar-mobile {
+  color: #2a182e;
+}
+.nav-link-lg {
+  color: white;
+}
+.nav-link-lg li:hover {
+  color: white;
+}
+.nav-link-lg li:active {
+  color: white;
+}
+.nav-link-lg button {
+  color: white;
+}
+.nav-link-right {
+  margin-top: 10px;
+  text-align: right;
+}
+.nav-link-sm li,
+.nav-link-right li {
+  list-style: none;
+  display: inline;
+  /* font-weight: 500; */
+  padding: 5px;
+  /* padding-bottom: 22px; */
+  /* cursor: pointer; */
+}
+
+.phone-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 18px;
+}
+.phone-link:hover {
+  .icon-vibrate {
+    transition: transform 0.3s ease;
+    animation: vibrate 0.2s infinite;
+  }
+}
+
+.btn-sign-in {
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+}
+.btn-sign-in:hover {
+  color: blue;
+}
+.btn-sign-in:active {
+  color: red;
+}
+.btn-sign-up {
+  font-size: 14px;
+  border: 1px solid rgb(255, 145, 0);
+  border-radius: 3px;
+  font-weight: 500;
+  height: 30px;
+  padding: 2px 10px 2px 10px;
+  background-color: rgb(255, 145, 0);
+  color: #2a182e;
+}
+.btn-sign-up:hover {
+  border: 1px solid rgb(255, 145, 0);
+  background-color: #2a182e;
+  color: rgb(255, 166, 0);
+}
+
+.reserve-sm {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  color: rgb(0, 0, 0);
+  z-index: -1;
+  height: 360px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-left: 0.5px solid grey;
+  border-right: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.productList-sm {
+  height: 369px;
+  width: 700px;
+  /* z-index: -2; */
+  box-shadow: 0 6px 18px 0 rgba(22, 45, 61, 0.12);
+  border: 1px solid rgb(65, 22, 55);
+  margin-left: 6%;
+  margin-top: -2px;
+  border-radius: 3px;
+  display: none;
+  position: relative;
+  animation: banneropen 0.5s ease-in-out;
+}
+.serviceList-sm {
+  height: 369px;
+  width: 700px;
+  display: none;
+  /* z-index: -1; */
+  box-shadow: 0 6px 18px 0 rgba(22, 45, 61, 0.12);
+  border: 1px solid rgb(58, 13, 54);
+  margin-left: 5%;
+  margin-top: -2px;
+  border-radius: 3px;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  animation: banneropen 0.5s ease-in-out;
+}
+.card-sm {
+  /* background-color: rgba(255, 255, 255, 0.097); */
+  position: relative;
+  height: 66px;
+  /* border: 0.1px solid grey; */
+  padding: 0px;
+  border-radius: 4px;
+  margin: 10px 10px 25px 10px;
+}
+.card-sm h6 {
+  margin-top: 10px;
+  font-size: 14px;
+  /* font-weight: 600; */
+  -webkit-text-stroke: 0.3px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  /* font-family: "sysstem", sans-serif; */
+  margin-left: 20px;
+  line-height: 4px;
+}
+.card-sm h6:hover {
+  color: orangered;
+}
+.card-sm p {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+
+  margin-left: 20px;
+  color: rgb(224, 224, 224);
+}
+.card-sm a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.card-sm a:hover {
+  color: rgb(255, 102, 0);
+}
+.card-sm a:active {
+  color: rgba(219, 82, 2, 0.818);
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-andika {
+  font-family: "Andika", sans-serif;
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.banneropen {
+  animation-timing-function: ease-in;
+  animation: banneropen 1s;
+}
+.fadein {
+  animation: fadein 1s ease;
+}
+@keyframes banneropen {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 369px;
+  }
+}
+@keyframes fadein {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  40% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+/* pasted here style while writing code */

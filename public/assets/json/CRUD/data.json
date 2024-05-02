@@ -1,0 +1,30 @@
+[
+    {
+        "noticeDate": "",
+        "noticeHead": "4",
+        "noticeFile": "\/assets\/json\/noticeData\/uploads\/4_years.png",
+        "notice": "",
+        "isNew": true
+    },
+    {
+        "noticeDate": "",
+        "noticeHead": "2",
+        "noticeFile": "\/assets\/json\/noticeData\/uploads\/",
+        "notice": "",
+        "isNew": false
+    },
+    {
+        "noticeDate": "",
+        "noticeHead": "3",
+        "noticeFile": "\/assets\/json\/noticeData\/uploads\/",
+        "notice": "3",
+        "isNew": true
+    },
+    {
+        "noticeDate": "",
+        "noticeHead": "4",
+        "noticeFile": "\/assets\/json\/noticeData\/uploads\/4_years.png",
+        "notice": "",
+        "isNew": false
+    }
+]

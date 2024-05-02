@@ -1,0 +1,15 @@
+.display-inline-block{
+    display: inline-block;
+}
+.w-100{
+    width: 100%;
+}
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+
+.easy-slide-up{
+
+    animation: easy-slide-up 0.8s ease-in-out;
+}

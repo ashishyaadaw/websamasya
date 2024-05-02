@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/cliparts/logo_icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="apple-touch-icon" href="./logo dp.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="bootstap.min.css" />
+    <link rel="stylesheet" href="components/overlay.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika&family=Poppins&family=Quicksand&family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./script.js"></script>
+    <title>WebSamasya</title>
+    <meta name="description" content="a web solution company in gorakhpur" />
+  </head>
+
+  <body id="body" class="bg-ws-primary">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="overlay">
+      <div id="loader"></div>
+    </div>
+    <script>
+      // Wait for the page to fully load
+
+      window.addEventListener("load", () => {
+        // Remove the overlay once the page is loaded
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+      });
+    </script>
+
+    <header id="header" class="sticky-lg-top bg-ws-primary">
+    
+        <!-- header for bg-screen -->
+
+      <div id="bigScreenHeader" class="bg-screen-header sticky-lg-top position-fixed ft-quicksand">
+        <div class="sticky-lg-top  bg-ws-primary shadow">
+          <!-- header for bg-screen -->
+          <div class="row align-items-start w-100">
+            <div class="col-2" onclick="closeClick()">
+              <a href="/">
+                <img class="navbar-logo" src="./logoHere.png" alt="logoHERE" />
+              </a>
+            </div>
+            <div class="col-5 fw-bolder">
+              <ul class="nav-link nav-link-lg">
+                <li id="product">
+                  Products
+                  <svg
+                    id="productExpand"
+                    class="list-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                  >
+                    <path
+                      d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                    />
+                  </svg>
+                </li>
+                <li class="abouts">
+                  <button class="dropdown-btn">Abouts</button>
+                  <div class="dropdown-content">
+                    <a href="/about_us">About us</a>
+                    <a href="/price">Price</a>
+                    <a href="/termsandconditions">T&Cs</a>
+                    <a href="/privacypolicy">Privacy Policy</a>
+                  </div>
+                </li>
+                <li id="service">
+                  Services
+                  <svg
+                    id="serviceExpand"
+                    class="list-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                  >
+                    <path
+                      d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                    />
+                  </svg>
+                </li>
+                <li id="blog-link" class="blog">
+                      <a href="/blog" class="text-light text-decoration-none">blog</a>
+              
+                </li>
+              </ul>
+            </div>
+            <div class="col-5 float-end" onclick="closeClick()">
+              <ul class="nav-link-right pt-2 ft-quicksand">
+                <li>
+                  <a class="phone-link" href="tel:+916306366766">
+                    <img
+                      width="25"
+                      height="25"
+                      src="https://img.icons8.com/dotty/80/ffffff/phone.png"
+                      alt="phone"
+                    />
+                    <span class="phone-number">+91-63063 66766</span>
+                  </a>
+                </li>
+                <li>
+                  <button class="btn-sign-in font-quicksand text-light">
+                    Sign in
+                  </button>
+                </li>
+                <li><button class="btn-sign-up fw-bolder">Sign up</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="z-2" onclick="closeClick()">
+          <!-- product menu list -->
+          <div id="productList" class="product-menu-list productList">
+            <div class="row bg-ws-primary-low">
+              <div class="col-9 col-left-ml">
+                <div class="row">
+                  <div class="col">
+                    <!-- this is menu list items -->
+                    <div id="a1" class="card-ml rounded">
+                      <a href="/website_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-websites-advertising-agency-flaticons-lineal-color-flat-icons.png"
+                                alt="external-websites-advertising-agency-flaticons-lineal-color-flat-icons"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Templates</span>
+                            </h6>
+                            <p>
+                              Ready to use designed website. Select as per your
+                              enterprise need.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a2" class="card-ml rounded">
+                      <a href="/mobile_application_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Mobile-Apps-real-estate-filled-outline-design-circle.png"
+                                alt="external-Mobile-Apps-real-estate-filled-outline-design-circle"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Mobile Apps </span>
+                            </h6>
+                            <p>
+                              Select the best app for your enterprise that suit
+                              360<sup>&deg;</sup> of requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a3" class="card-ml rounded">
+                      <a href="/digital_post&cards">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/nolan/64/greeting-card.png"
+                                alt="greeting-card"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Digital Post & Cards</span>
+                            </h6>
+                            <p>
+                              Greet someone with our classified digital cards ,
+                              post & wallpapper.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a4" class="card-ml rounded">
+                      <a href="/logo_maker">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/color/48/old-vmware-logo.png"
+                                alt="old-vmware-logo"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Logo Maker</span>
+                            </h6>
+                            <p>
+                              Need a unique identity logo for your bussiness.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <!-- above code similar -->
+                  </div>
+                  <div class="col">
+                    <!-- this is menu list items -->
+                    <div id="b1" class="card-ml rounded">
+                      <a href="/website_editor">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/cotton/64/website-builder.png"
+                                alt="website-builder"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Editor</span>
+                            </h6>
+                            <p>
+                              Make your website customise, best for your
+                              requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b2" class="card-ml rounded">
+                      <a href="/website_kit">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/developer-mode.png"
+                                alt="developer-mode"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Kits</span>
+                            </h6>
+                            <p>
+                              Add our special widget to your website and make
+                              more functional.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b3" class="card-ml rounded">
+                      <a href="/edu_Classified">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="50"
+                                height="50"
+                                src="https://img.icons8.com/bubbles/50/education.png"
+                                alt="education"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>edu Classified</span>
+                            </h6>
+                            <p>
+                              Exclusive product & offer for school, college and
+                              other education Institutes.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b4" class="card-ml rounded">
+                      <a href="/software">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/laptop-settings.png"
+                                alt="laptop-settings"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Software</span>
+                            </h6>
+                            <p>
+                              Every enterprise need special software to fasten
+                              and ease their task.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-right-ml">
+                <!-- <button class="btn-close" onclick="closeClick()">X</button> -->
+                <div id="productOffer" class="productOffer">
+                  <img
+                    src="/assets/banner/banner.jpg"
+                    class="img-fluid"
+                    alt="no"
+                  />
+                  <span style="position: absolute"> get off 100%</span>
+                </div>
+                <div class="offer-box"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Services menu list -->
+          <div
+            id="serviceList"
+            class="service-menu-list serviceList bg-ws-primary-low"
+          >
+            <div class="col col-left-ml">
+              <div class="row">
+                <div class="col-4">
+                  <!-- this is menu list items -->
+                  <div
+                    id="detail1"
+                    onmouseover="displayBlock('detail1open')"
+                    onmouseout="displayNone('detail1open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                      <a href="/social_media_post"
+                            > <div class="col">
+                        <h6>
+                         <span>Social Media Post</span>
+                        </h6>
+                        <p>
+                          Make your social media handle a classified appearance.
+                        </p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <div
+                    id="detail2"
+                    onmouseover="displayBlock('detail2open')"
+                    onmouseout="displayNone('detail2open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                   <a href="/website_design_design"
+                            >   <div class="col">
+                        <h6>
+                          <span>Website Design</span>
+                        </h6>
+                        <p>
+                          Hire our designer for exclusive design for your
+                          enterprise.
+                        </p>
+                      </div>
+
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <div
+                    id="detail3"
+                    onmouseover="displayBlock('detail3open')"
+                    onmouseout="displayNone('detail3open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                  <a href="/seo_service">
+                      <div class="col">
+                        <h6>
+                          <span>SEO</span>
+                        </h6>
+                        <p>
+                          Search Engine Optimisation helps in increase rank of
+                          listing on search .
+                        </p>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    id="detail4"
+                    onmouseover="displayBlock('detail4open')"
+                    onmouseout="displayNone('detail4open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                   <a href="/marketing_service"
+                            >
+                      <div class="col">
+                        <h6>
+                         <span>Google Ads</span>
+                        </h6>
+                        <p>
+                          Make Google Ads or add Google Ads Pay per click to
+                          your existing website to earn money.
+                        </p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <!-- above code similar -->
+                </div>
+                <div class="col-4">
+                  <!-- this is menu list items -->
+                  <div
+                    id="detail5"
+                    onmouseover="displayBlock('detail5open')"
+                    onmouseout="displayNone('detail5open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                  <a href="/marketing_service"
+                            >
+                      <div class="col">
+                        <h6>
+                          <span>Social Media Ads</span>
+                        </h6>
+                        <p>
+                          Run promotional ads on various social media
+                          plateforms.
+                        </p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <div
+                    id="detail6"
+                    onmouseover="displayBlock('detail6open')"
+                    onmouseout="displayNone('detail6open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                     <a href="/software_service"
+                            >
+                      <div class="col">
+                        <h6>
+                       <span>Software Solution</span>
+                        </h6>
+                        <p>Ease your task by your customise software.</p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <div
+                    id="detail7"
+                    onmouseover="displayBlock('detail7open')"
+                    onmouseout="displayNone('detail7open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                  <a href="/consulancy_service"
+                            >
+                      <div class="col">
+                        <h6>
+                          <span>Consultancy</span>
+                        </h6>
+                        <p>
+                          Disscuss your need , problems facing with our team.
+                          Our Team suggest best solution.
+                        </p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <div
+                    id="detail8"
+                    onmouseover="displayBlock('detail8open')"
+                    onmouseout="displayNone('detail8open')"
+                    class="card-ml service-text rounded"
+                  >
+                    <div class="row">
+                      <!-- <div class="col-3">
+                    <span class="side-icon"
+                      ><img
+                        class="icon-side"
+                        height="58px"
+                        weight="58px"
+                        src="./public/sample.png"
+                    /></span>
+                  </div> -->
+                   <a href="/hire_professional"
+                            >
+                      <div class="col">
+                        <h6>
+                         <span>Hire a Proffessional</span>
+                        </h6>
+                        <p>
+                          Need a person having depth of knowledge in their
+                          field.
+                        </p>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </div>
+                  <!-- above code similar -->
+                </div>
+                <div class="col service-detail-box bg-ws-primary-low pt-2">
+                  <!-- <button class="btn-close" onclick="closeClick()"></button> -->
+                  <div id="detail1open" class="details detail1">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/XyJPNKBskIDWR3Md8K"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Social Media Post</h5>
+                        <p class="card-text font-quicksand">
+                          Make your social media handle a classified appearance.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail2open" class="details detail2">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/hS3ESVXKy595K"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Website Design</h5>
+                        <p class="card-text font-quicksand">
+                          Hire our designer for exclusive design for your
+                          enterprise.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail3open" class="details detail3">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/fXhWTNb6CSXwytpIBW"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">SEO</h5>
+                        <p class="card-text font-quicksand">
+                          Search Engine Optimisation helps in increase rank of
+                          listing on search .
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail4open" class="details detail4">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/5NPhdqmyRxn8I"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Google Ads</h5>
+                        <p class="card-text font-quicksand">
+                          Make Google Ads or add Google Ads Pay per click to
+                          your existing website to earn money.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail5open" class="details detail5">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/l2JJrTTQyOIRM8R0c"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Social Media Ads</h5>
+                        <p class="card-text font-quicksand">
+                          Run promotional ads on various social media
+                          plateforms.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail6open" class="details detail6">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/u1WhXLjwgcXpHJBMRM"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Software Solution</h5>
+                        <p class="card-text font-quicksand">
+                          Ease your task by your customise software.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail7open" class="details detail7">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/hAudXTEX1tKI34vz7i"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">Consultancy</h5>
+                        <p class="card-text font-quicksand">
+                          Disscuss your need , problems facing with our team.
+                          Our Team suggest best solution.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detail8open" class="details detail8">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <iframe
+                          src="https://giphy.com/embed/pzfkNrK7ji1cKWk1BQ"
+                          class="card-img-top card-image"
+                          frameborder="0"
+                          class="giphy-embed"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5 class="card-title fw-bolder">
+                          Hire a Proffessional
+                        </h5>
+                        <p class="card-text font-quicksand">
+                          Need a person having depth of knowledge in their
+                          field.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="detailDefault" class="detailDefault">
+                    <div class="card" style="width: 18rem">
+                      <div class="card-image">
+                        <img
+                          id="defaultservicebanner"
+                          src="\assets\banner\default_service_banner.jpg"
+                          class="card-img-top card-image"
+                          aria-placeholder="bg-white"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body bg-warning-subtle">
+                        <h5
+                          id="defaultserviceheading"
+                          class="card-title fw-bolder"
+                        >
+                          Republic Day Offer
+                        </h5>
+                        <p
+                          id="defaultserviceparagraph"
+                          class="card-text font-quicksand"
+                        >
+                          Republic day offer is live Now!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header for small screen -->
+      <div id="smallScreenHeader" class="sticky-lg-top bg-ws-primary  sm-screen-header position-fixed">
+        <div class="header-div-sm text-center ft-quicksand">
+          <div class=" text-center sticky-lg-top w-100 position-fixed">
+            <!-- header for sm-screen -->
+            <div class="row shadow align-items-start">
+              <div class="col-2" onclick="closeClick()">
+                <a href="/">
+                  <img
+                    class="navbar-logo"
+                    src="./logoHere.png"
+                    alt="logoHERE"
+                  />
+                </a>
+              </div>
+              <div class="col-5 nav-link-sm">
+                <ul class="nav-link text-center">
+                  <li id="productSmall">
+                    Products
+                    <svg
+                      id="productExpandSmall"
+                      class="list-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                    >
+                      <path
+                        d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                      />
+                    </svg>
+                  </li>
+
+                  <li id="aboutsSmall">
+                    <button class="dropdown-btn text-light">Abouts</button>
+                    <div class="dropdown-content" id="dropdownSmallContent">
+                      <a href="/about_us">About us</a>
+                      <a href="/price">Price</a>
+                      <a href="/termsandconditions">T&Cs</a>
+                      <a href="/privaypolicy">Privacy Policy</a>
+                    </div>
+                  </li>
+                  <li id="serviceSmall">
+                    Services
+                    <svg
+                      id="serviceExpandSmall"
+                      class="list-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                    >
+                      <path
+                        d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                      />
+                    </svg>
+                  </li>
+                  <li id="blogSmall" class="blog">    <a href="/blog" class="text-light text-decoration-none">blog</a>
+              </li>
+                </ul>
+              </div>
+              <div class="col-5 float-end">
+                <ul class="nav-link-right">
+                  <li>
+                    <a class="phone-link" href="tel:+916306366766">
+                      <img
+                        class="icon-vibrate"
+                        width="24" height="24" src="https://img.icons8.com/dotty/80/ffffff/phone.png" alt="phone"/>
+                      </svg>
+                      <!-- <span class="phone-number">+91-63063 66766</span> -->
+                    </a>
+                  </li>
+                  <li>
+                    <button class="btn-sign-in font-quicksand text-light">
+                      Sign in
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn-sign-up font-poppins">Sign up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container sm-menu-box ">
+          <div id="productListSmall" class="productList-sm bg-ws-primary-low">
+             <div class="row">
+                  <div class="col">
+                    <!-- this is menu list items -->
+                    <div id="a1" class="card-sm ">
+                      <a href="/website_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-websites-advertising-agency-flaticons-lineal-color-flat-icons.png"
+                                alt="external-websites-advertising-agency-flaticons-lineal-color-flat-icons"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Templates</span>
+                            </h6>
+                            <p>
+                              Ready to use designed website. Select as per your
+                              enterprise need.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a2" class="card-sm ">
+                      <a href="/mobile_application_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Mobile-Apps-real-estate-filled-outline-design-circle.png"
+                                alt="external-Mobile-Apps-real-estate-filled-outline-design-circle"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Mobile Apps </span>
+                            </h6>
+                            <p>
+                              Select the best app for your enterprise that suit
+                              360<sup>&deg;</sup> of requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a3" class="card-sm fadein">
+                      <a href="/digital_post&cards">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/nolan/64/greeting-card.png"
+                                alt="greeting-card"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Digital Post & Cards</span>
+                            </h6>
+                            <p>
+                              Greet someone with our classified digital cards ,
+                              post & wallpapper.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="a4" class="card-sm fadein">
+                      <a href="/logo_maker">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/color/48/old-vmware-logo.png"
+                                alt="old-vmware-logo"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Logo Maker</span>
+                            </h6>
+                            <p>
+                              Need a unique identity logo for your bussiness.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <!-- above code similar -->
+                  </div>
+                  <div class="col">
+                    <!-- this is menu list items -->
+                    <div id="b1" class="card-sm ">
+                      <a href="/website_editor">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/cotton/64/website-builder.png"
+                                alt="website-builder"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Editor</span>
+                            </h6>
+                            <p>
+                              Make your website customise, best for your
+                              requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b2" class="card-sm ">
+                      <a href="/website_kit">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/developer-mode.png"
+                                alt="developer-mode"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Kits</span>
+                            </h6>
+                            <p>
+                              Add our special widget to your website and make
+                              more functional.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b3" class="card-sm fadein">
+                      <a href="/edu_Classified">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="50"
+                                height="50"
+                                src="https://img.icons8.com/bubbles/50/education.png"
+                                alt="education"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>edu Classified</span>
+                            </h6>
+                            <p>
+                              Exclusive product & offer for school, college and
+                              other education Institutes.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div id="b4" class="card-sm fadein">
+                      <a href="/software">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/laptop-settings.png"
+                                alt="laptop-settings"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Software</span>
+                            </h6>
+                            <p>
+                              Every enterprise need special software to fasten
+                              and ease their task.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+     
+          </div>
+
+          <div id="serviceListSmall" class="serviceList-sm bg-ws-primary-low">
+                <div class="row">
+                    <div class="col-6">     
+                       <a href="/social_media_post" class="text-decoration-none"> 
+                      <div class="card-sm ">
+                     <h6>
+                          <span>Social Media Post</span>
+                        </h6>
+                        <p>
+                          Make your social media handle a classified appearance.
+                        </p>
+                      </div></a
+                          >
+              
+                        <a href="/website_design_design"class="text-decoration-none"> 
+                      <div class="card-sm ">
+                        <h6><span>Website Design</span>
+                        </h6>
+                        <p>
+                          Hire our designer for exclusive design for your
+                          enterprise.
+                        </p>
+                      </div>
+                </a>
+        
+                    <a href="/seo_service" class="text-decoration-none"> 
+                      <div class="card-sm fadein">
+                        <h6>
+                         <span>SEO</span>
+                        </h6>
+                        <p>
+                          Search Engine Optimisation helps in increase rank of
+                          listing on search .
+                        </p>
+                      </div>
+             </a>
+            <a href="/marketing_service"class="text-decoration-none"> 
+                      <div class="card-sm fadein">
+                        <h6>
+                         <span>Google Ads</span>
+                        </h6>
+                        <p>
+                          Make Google Ads or add Google Ads Pay per click to
+                          your existing website to earn money.
+                        </p>
+                      </div>
+            </a>
+     
+                </div>
+                <div class="col-6">
+            <a href="/marketing_service"class="text-decoration-none"> 
+                      <div class="card-sm ">
+                        <h6>
+                        
+                          <span>Social Media Ads</span>
+                        </h6>
+                        <p>
+                          Run promotional ads on various social media
+                          plateforms.
+                        </p>
+                      </div>
+               </a>
+            <a href="/software_service" class="text-decoration-none"> 
+                      <div class="card-sm ">
+                        <h6>
+                          <span>Software Solution</span>
+                        </h6>
+                        <p>Ease your task by your customise software.</p>
+                      </div>
+            </a>
+            <a  href="/consulancy_service" class="text-decoration-none"> 
+                      <div class="card-sm fadein">
+                        <h6>
+                          
+                            <span>Consultancy</span>
+                        </h6>
+                        <p>
+                          Disscuss your need , problems facing with our team.
+                          Our Team suggest best solution.
+                        </p>
+                      </div>
+           </a>
+
+            <a href="/hire_professional" class="text-decoration-none"> 
+                      <div class="card-sm fadein">
+                        <h6>
+                          
+                            <span>Hire a Proffessional</span>
+                        </h6>
+                        <p>
+                          Need a person having depth of knowledge in their
+                          field.
+                        </p>
+                      </div>
+          </a>
+              
+                </div>
+              </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- header for mobile screen -->
+      <div id="mobileScreenHeader" class="sticky-lg-top bg-ws-primary " >
+        <div class="mb-screen-header bg-ws-primary shadow">
+          <div class="row">
+            <div class="col-5 p-2 " onclick="closeClick()">
+              <a class="phone-link"  href="/">
+                <img class="navbar-logo-mobile" src="./logoHere.png" alt="logoHERE" />
+              </a>
+            </div>
+            <div class="col p-2" >
+
+              <div class="row d-flex">
+                 
+                  
+                 <ul class="mobile-icon-link-right">
+                    <li>
+                     &nbsp;
+                     <a class="phone-link" href="#request_call_back">
+                     <img width="25" height="25" src="https://img.icons8.com/ios/50/ffffff/chat-message--v1.png"alt="chat-message--v1"/>
+                    </a> 
+                 </li>
+                 
+                 <li>
+                  
+                       <a class="phone-link" >   
+                <img width="25" height="25" src="https://img.icons8.com/ios/50/ffffff/appointment-reminders--v1.png" alt="appointment-reminders--v1"/>
+                </a>
+                 </li>
+                  <li class="row d-flex"> <a class="phone-link col" href="#search">
+                  <img width="25" height="25" src="https://img.icons8.com/ios/ffffff/50/search--v1.png" alt="search--v1"/> </a>  
+              
+                  &nbsp;
+                 </li>
+               
+                 </ul>
+             <div class="col">
+                <div id="mbOpenMenu" class="col  ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#FFFFFF"
+                viewBox="0 0 50 50"
+                width="35"
+                height="35"
+              >
+                <path
+                  d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
+                />
+              </svg>
+            </div>
+            <div id="mbCloseMenu" class="col ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="35"
+                fill="#FFFFFF"
+                viewBox="0 -960 960 960"
+                width="35"
+              >
+                <path
+                  d="m249-183-66-66 231-231-231-231 66-66 231 231 231-231 66 66-231 231 231 231-66 66-231-231-231 231Z"
+                />
+              </svg>
+            </div>
+             </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+ 
+      </div>
+       <div
+          id="mbMenuList"
+          class="mb-screen-menu-list  bg-ws-primary"
+          style="overflow-y:scroll;height: calc(100% - 58px);"
+        >
+          
+          <div class="container ">
+        
+            <ul class="mb-nav-link ft-quicksand ">
+              <!-- this is mobile menu products links -->
+              <li id="mbProducts" class="mb-main-list pt-3">
+                <span class="fs-4">&nbsp;&nbsp;Products</span>
+                <span class="icon float-end mx-3">
+                  <svg
+                    fill="#5E5B5B"
+                    id="mbProductDdSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="35"
+                    viewBox="0 -960 960 960"
+                    width="35"
+                  >
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M480-334 216-598l66-66 198 199 198-199 66 66-264 264Z"
+                    />
+                  </svg>
+                </span>
+                <ul
+                  id="mbExpandProducts"
+                  class="mb-expand-products font-andika link-item"
+                >
+                  <li>
+                      <div id="a1" class="card-ml rounded">
+                      <a href="/website_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-websites-advertising-agency-flaticons-lineal-color-flat-icons.png"
+                                alt="external-websites-advertising-agency-flaticons-lineal-color-flat-icons"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Templates</span>
+                            </h6>
+                            <p>
+                              Ready to use designed website. Select as per your
+                              enterprise need.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+           
+             
+                  </li>
+                  <li>
+                    <div id="a4" class="card-ml rounded">
+                      <a href="/logo_maker">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/color/48/old-vmware-logo.png"
+                                alt="old-vmware-logo"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Logo Maker</span>
+                            </h6>
+                            <p>
+                              Need a unique identity logo for your bussiness.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div></li>
+                  <li>
+                             <div id="a3" class="card-ml rounded">
+                      <a href="/digital_post&cards">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/nolan/64/greeting-card.png"
+                                alt="greeting-card"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Digital Post & Cards</span>
+                            </h6>
+                            <p>
+                              Greet someone with our classified digital cards ,
+                              post & wallpapper.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </li>  
+                   <li>  
+                    <div id="a2" class="card-ml rounded">
+                      <a href="/mobile_application_templates">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Mobile-Apps-real-estate-filled-outline-design-circle.png"
+                                alt="external-Mobile-Apps-real-estate-filled-outline-design-circle"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Mobile Apps </span>
+                            </h6>
+                            <p>
+                              Select the best app for your enterprise that suit
+                              360<sup>&deg;</sup> of requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+           </li>
+            <li> <div id="b1" class="card-ml rounded">
+                      <a href="/website_editor">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="64"
+                                height="64"
+                                src="https://img.icons8.com/cotton/64/website-builder.png"
+                                alt="website-builder"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Editor</span>
+                            </h6>
+                            <p>
+                              Make your website customise, best for your
+                              requirement.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div></li>
+                    <li><div id="b2" class="card-ml rounded">
+                      <a href="/website_kit">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/developer-mode.png"
+                                alt="developer-mode"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Website Kits</span>
+                            </h6>
+                            <p>
+                              Add our special widget to your website and make
+                              more functional.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div></li>
+                    <li><div id="b3" class="card-ml rounded">
+                      <a href="/edu_Classified">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="50"
+                                height="50"
+                                src="https://img.icons8.com/bubbles/50/education.png"
+                                alt="education"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>edu Classified</span>
+                            </h6>
+                            <p>
+                              Exclusive product & offer for school, college and
+                              other education Institutes.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div></li>
+                    <li><div id="b4" class="card-ml rounded">
+                      <a href="/software">
+                        <div class="row card-wrap">
+                          <div class="col-3">
+                            <span class="side-icon">
+                              <img
+                                width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency/48/laptop-settings.png"
+                                alt="laptop-settings"
+                              />
+                            </span>
+                          </div>
+                          <div class="col">
+                            <h6>
+                              <span>Software</span>
+                            </h6>
+                            <p>
+                              Every enterprise need special software to fasten
+                              and ease their task.
+                            </p>
+                          </div>
+                        </div></a
+                      >
+                    </div></li>
+                </ul>
+              </li>
+            
+              <!-- this is mobile menu services sections -->
+              <li id="mbServices" class="mb-main-list pt-3">
+                  <span class="fs-4">&nbsp;&nbsp;Services</span>
+                <span class="icon float-end mx-3">
+                  <svg
+                    fill="#5E5B5B"
+                    id="mbServicesDdSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="35"
+                    viewBox="0 -960 960 960"
+                    width="35"
+                  >
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M480-334 216-598l66-66 198 199 198-199 66 66-264 264Z"
+                    />
+                  </svg>
+                </span>
+
+                <ul
+                  id="mbExpandServices"
+                  class="mb-expand-services font-andika link-item"
+                >
+                  <li>  
+                    <div class="card-ml">
+                   
+             
+
+                      <a href="/social_media_post"
+                            >
+                        <div class="row d-flex">
+                        <div  style="width: 90px;">
+                         <img width="78" height="78" src="https://img.icons8.com/external-filled-color-icons-papa-vector/78/external-Social-Media-Post-social-engagement-filled-color-icons-papa-vector.png" alt="external-Social-Media-Post-social-engagement-filled-color-icons-papa-vector"/>
+                        </div>
+                      <div class="col">
+                        <h6>
+                         <span>Social Media Post</span>
+                        </h6>
+                        <p>
+                          Make your social media handle a classified appearance.
+                        </p>
+                      </div>
+                      </div>
+                      </a
+                          >
+                    </div>
+                  </li>
+                 <li>  
+                 <div class="card-ml">
+
+                      <a href="/website_design_design"
+                            >   
+                             
+                   <div class="row d-flex">
+                             <div  style="width: 90px;">
+                      <img width="64" height="64" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-website-design-internet-marketing-service-flaticons-flat-flat-icons.png" alt="external-website-design-internet-marketing-service-flaticons-flat-flat-icons"/>  </div>
+                            <div class="col">
+                        <h6>
+                          <span>Website Design</span>
+                        </h6>
+                        <p>
+                          Hire our designer for exclusive design for your
+                          enterprise.
+                        </p>
+                      </div>
+                   </div>
+
+                      </a
+                          >
+                 </div></li>
+                 <li>  <div class="card-ml">
+   <a href="/seo_service">
+
+
+            <div class="row d-flex">
+                             <div  style="width: 90px;"><img width="64" height="64" src="https://img.icons8.com/dusk/64/positive-dynamic.png" alt="positive-dynamic"/>  </div>
+                            <div class="col">
+                        <h6>
+                          <span>SEO</span>
+                        </h6>
+                        <p>
+                          Search Engine Optimisation helps in increase rank of
+                          listing on search .
+                        </p>
+                      </div>
+                   </div>
+
+                 
+                      </a>
+
+                 </div></li>
+                 <li>  <div class="card-ml">
+    <a href="/marketing_service"
+                            >
+                             <div class="row d-flex">
+                             <div  style="width: 90px;">
+                     <img width="48" height="48" src="https://img.icons8.com/color/48/google-ads.png" alt="google-ads"/> </div>
+                             <div class="col">
+                        <h6>
+                         <span>Google Ads</span>
+                        </h6>
+                        <p>
+                          Make Google Ads or add Google Ads Pay per click to
+                          your existing website to earn money.
+                        </p>
+                      </div>
+                   </div>
+                    
+                      </a
+                          >
+
+                 </div></li>
+                 <li>  <div class="card-ml">
+     <a href="/marketing_service"
+                            >
+                                           <div class="row d-flex">
+                             <div  style="width: 90px;">
+                    <img width="64" height="64" src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/64/external-ads-seo-and-marketing-kmg-design-outline-color-kmg-design.png" alt="external-ads-seo-and-marketing-kmg-design-outline-color-kmg-design"/>  </div>
+                                
+                      <div class="col">
+                        <h6>
+                          <span>Social Media Ads</span>
+                        </h6>
+                        <p>
+                          Run promotional ads on various social media
+                          plateforms.
+                        </p>
+                      </div>
+                   </div>
+                 
+                      </a
+                          >
+
+                 </div></li>
+                 <li>  <div class="card-ml">
+     <a href="/software_service"
+                            >
+                                     <div class="row d-flex">
+                             <div  style="width: 90px;">
+                      <img width="64" height="64" src="https://img.icons8.com/fluency/96/laptop-settings.png" alt="laptop-settings"/> </div>
+                                
+                             <div class="col">
+                        <h6>
+                       <span>Software Solution</span>
+                        </h6>
+                        <p>Ease your task by your customise software.</p>
+                      </div>
+                   </div>
+               
+                      </a
+                          >
+
+                 </div></li>   
+                   <li>  <div class="card-ml">
+
+      <a href="/consulancy_service"
+                            >
+                        <div class="row d-flex">
+                             <div  style="width: 90px;">
+                     <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-consultancy-automotive-dealership-flaticons-lineal-color-flat-icons-2.png" alt="external-consultancy-automotive-dealership-flaticons-lineal-color-flat-icons-2"/></div>
+                                 <div class="col">
+                        <h6>
+                          <span>Consultancy</span>
+                        </h6>
+                        <p>
+                          Disscuss your need , problems facing with our team.
+                          Our Team suggest best solution.
+                        </p>
+                      </div>
+                   </div>
+                  
+                      </a
+                          >
+                 </div></li>
+                      <li>  <div class="card-ml">
+
+      <a href="/hire_professional"
+                            >
+                                   <div class="row d-flex">
+                             <div  style="width: 90px;"><img width="48" height="48" src="https://img.icons8.com/color/48/professional-photographer.png" alt="professional-photographer"/>
+                            </div>
+                         <div class="col">
+                        <h6>
+                         <span>Hire a Proffessional</span>
+                        </h6>
+                        <p>
+                          Need a person having depth of knowledge in their
+                          field.
+                        </p>
+                      </div>
+                   </div>
+                
+                      </a
+                          >
+                 </div></li>
+               
+                </ul>
+              </li>
+                <!--  this is mobile menu abouts sections -->
+              <li id="mbAbouts" class="mb-main-list pt-3">
+                  <span class="fs-4">&nbsp;&nbsp;About</span>
+                <span class="icon float-end mx-3">
+                  <svg
+                    fill="#5E5B5B"
+                    id="mbAboutsDdSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="35"
+                    viewBox="0 -960 960 960"
+                    width="35"
+                  >
+                    <path
+                      xmlns="http://www.w3.org/2000/svg"
+                      d="M480-334 216-598l66-66 198 199 198-199 66 66-264 264Z"
+                    />
+                  </svg>
+                </span>
+
+                <ul
+                  id="mbExpandAbouts"
+                  class="mb-expand-abouts ft-quicksand link-item"
+                >
+                  <li>
+                    <a href="/about_us" class="nav-link">
+                         <div class="card-ml">
+                   
+                        <div class="row d-flex">
+                        <div  style="width: 90px;">
+                       <img width="64" height="64" src="https://img.icons8.com/bubbles/50/about.png" alt="about"/>
+                      </div>
+                      <div class="col">
+                        <h6>
+                         <span>About us</span>
+                        </h6>
+                        <p>
+                          If you want know more about us and our service just click About us.
+                        </p>
+                      </div>
+                      </div>
+                   
+                    </div>
+                  </a></li>
+                  <li><a href="/price" class="nav-link">
+                     <div class="card-ml">
+                   
+             
+                        <div class="row d-flex">
+                        <div  style="width: 90px;">
+                      <img width="64" height="64" src="https://img.icons8.com/color/96/tags--v1.png" alt="tags--v1"/> </div>
+                      <div class="col">
+                        <h6>
+                         <span>Price</span>
+                        </h6>
+                        <p>
+                          Know the charges of our service.
+                        </p>
+                      </div>
+                    
+                   
+                    </div>
+                  </a></li>
+                  <li>
+                    <a href="/termsandconditions" class="nav-link">   
+                      <div class="card-ml">
+                   
+  
+                        <div class="row d-flex">
+                        <div  style="width: 90px;">
+                      <img width="64" height="64" src="https://img.icons8.com/fluency/96/terms-and-conditions.png" alt="terms-and-conditions"/>
+                      </div>
+                      <div class="col">
+                        <h6>
+                         <span>Terms and Conditions</span>
+                        </h6>
+                        <p>
+                          We do not offer refunds. Check our T&Cs
+                        </p>
+                      </div>
+                      </div>
+                  
+                    </div></a></li>
+                      <li>
+                    <a href="/privacypolicy" class="nav-link">   
+                      <div class="card-ml">
+                   
+  
+                        <div class="row d-flex">
+                        <div  style="width: 90px;">
+                     <img width="64" height="64" src="https://img.icons8.com/color-glass/96/privacy-policy.png" alt="privacy-policy"/> </div>
+                      <div class="col">
+                        <h6>
+                         <span>Privacy policy</span>
+                        </h6>
+                        <p>
+                          We do not share our client data .
+                        </p>
+                      </div>
+                      </div>
+                  
+                    </div></a></li>
+                </ul>
+              </li>
+              <li id="mbBlog" class="mb-main-list pt-3">
+         
+                    <span class="fs-4">&nbsp;&nbsp;    <a href="/blog" class="text-light text-decoration-none">blog</a>
+              </span>
+              </li>
+            </ul>
+          
+                <button class="btn w-100 mt-2 mb-2 btn-outline-warning ">Login</button>
+        
+                <button class="btn w-100 mb-2 btn-warning">Sign up for free</button>
+
+                <button class="created-by-logo  ft-quicksand fw-bolder">
+                created by &nbsp; &nbsp;
+                <img
+                 src="/logoHere.png"
+                 alt="no text"
+                 />
+                       </button>
+           
+            </div>
+          </div>
+
+    </header>
+    <!-- Menu for mobile and smartphone devices -->
+
+    <!-- Menu for mobile and smartphone devices ends -->
+    <div id="root"></div>
+    <!-- footer section ends here -->
+    <!-- CDN Links starts scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CDN links ends here -->
+    <!-- eventListener scripts -->
+
+    <script>
+      document
+        .getElementById("product")
+        .addEventListener("click", productClick);
+      document
+        .getElementById("service")
+        .addEventListener("click", serviceClick);
+      document.getElementsByClassName("product");
+
+      document
+        .getElementById("productSmall")
+        .addEventListener("click", productClickSmall);
+      document
+        .getElementById("serviceSmall")
+        .addEventListener("click", serviceClickSmall);
+
+      window.addEventListener("resize", changeHeader);
+      window.addEventListener("load", changeHeader);
+
+      // When the mouse hovers over the dropdown button, show the dropdown content
+      document
+        .querySelector(".abouts")
+        .addEventListener("mouseover", function () {
+          document.querySelector(".dropdown-content").style.display = "block";
+          closeClick();
+        });
+
+      // When the mouse leaves the dropdown button, hide the dropdown content
+      document
+        .querySelector(".abouts")
+        .addEventListener("mouseout", function () {
+          document.querySelector(".dropdown-content").style.display = "none";
+        });
+      // When the mouse hovers over the blog hide opened menu
+      document
+        .querySelector(".blog")
+        .addEventListener("mouseover", function () {
+          // document.querySelector(".dropdown-content").style.display = "block";
+          closeClick();
+        });
+
+      document
+        .getElementById("aboutsSmall")
+        .addEventListener("mouseover", function () {
+          document.getElementById("dropdownSmallContent").style.display =
+            "block";
+          closeClick();
+        });
+      document
+        .getElementById("aboutsSmall")
+        .addEventListener("mouseout", function () {
+          document.getElementById("dropdownSmallContent").style.display =
+            "none";
+        });
+
+      document
+        .getElementById("blogSmall")
+        .addEventListener("mouseover", function () {
+          // document.getElementById("dropdownSmallContent").style.display =
+          //   "none";
+          closeClick();
+        });
+      // open mobile product menu
+      document
+        .getElementById("mbProducts")
+        .addEventListener("click", function () {
+          displayNone("mbExpandAbouts");
+          rotate("mbAboutsDdSvg", "rotate(0deg)");
+          displayNone("mbExpandServices");
+          rotate("mbServicesDdSvg", "rotate(0deg)");
+          var getId = document.getElementById("mbExpandProducts");
+          var status = getId.style.display;
+          if (status == "block") {
+            getId.style.display = "none";
+            rotate("mbProductDdSvg", "rotate(0deg)");
+          } else {
+            getId.style.display = "block";
+            rotate("mbProductDdSvg", "rotate(180deg)");
+          }
+        });
+
+      // open mobile abouts menu
+      document
+        .getElementById("mbAbouts")
+        .addEventListener("click", function () {
+          displayNone("mbExpandProducts");
+          rotate("mbProductDdSvg", "rotate(0deg)");
+          displayNone("mbExpandServices");
+          rotate("mbServicesDdSvg", "rotate(0deg)");
+          var getId = document.getElementById("mbExpandAbouts");
+          var status = getId.style.display;
+          if (status == "block") {
+            getId.style.display = "none";
+            rotate("mbAboutsDdSvg", "rotate(0deg)");
+          } else {
+            getId.style.display = "block";
+            rotate("mbAboutsDdSvg", "rotate(180deg)");
+          }
+        });
+      // open mobile services menu
+      document
+        .getElementById("mbServices")
+        .addEventListener("click", function () {
+          displayNone("mbExpandAbouts");
+          rotate("mbAboutsDdSvg", "rotate(0deg)");
+          displayNone("mbExpandProducts");
+          rotate("mbProductDdSvg", "rotate(0deg)");
+          var getId = document.getElementById("mbExpandServices");
+          var status = getId.style.display;
+          if (status == "block") {
+            getId.style.display = "none";
+
+            rotate("mbServicesDdSvg", "rotate(0deg)");
+          } else {
+            getId.style.display = "block";
+            rotate("mbServicesDdSvg", "rotate(180deg)");
+          }
+        });
+
+      document
+        .getElementById("mbOpenMenu")
+        .addEventListener("click", function () {
+          displayNone("mbOpenMenu");
+          displayBlock("mbMenuList");
+          displayBlock("mbCloseMenu");
+          document.getElementById("callback_request").style.display = "none";
+        });
+      document
+        .getElementById("mbCloseMenu")
+        .addEventListener("click", function () {
+          displayBlock("mbOpenMenu");
+          displayNone("mbMenuList");
+          displayNone("mbCloseMenu");
+          document.getElementById("callback_request").style.display = "block";
+        });
+      window.addEventListener("scroll", function () {
+        var height = getScrollPosition();
+        if (height >= "200") {
+        } else if (height <= "199") {
+        }
+      });
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Dr. Sunil Kumar Mishra",
+        "about": "Manager at Glycols ltd Gorakhpur",
+        "img_url": "\/slide_images\/sunil_midhra.png",
+        "quote": "quote here",
+        "visibility": false
+    },
+    {
+        "name": "Prof. N.B. Singh",
+        "about": "Vice Chancelor KMCLU",
+        "img_url": ".\/auth\/upload\/testimonial\/nbsingh.jpg",
+        "quote": "He is vice chancellor of Khawaja Moinuddin Chishti language University Lucknow",
+        "visibility": true
+    },
+    {
+        "name": "Prof. (Dr.) Om Prakash Singh",
+        "about": "Principal DNPG College",
+        "img_url": "https:\/\/www.dnpgcollege.edu.in\/img\/PrincipalOPSingh.jpeg",
+        "quote": "He is principle of gorakhpur's reputed college Digvijai Nath Post Graduate college",
+        "visibility": true
+    },
+    {
+        "name": "Dr ",
+        "about": "Manager of Synergy CANCER Hospital",
+        "img_url": "\/slide_images\/synergy_director.jpg",
+        "quote": "",
+        "visibility": true
+    },
+    {
+        "name": "Dr. Rajesh Mani Ji",
+        "about": "",
+        "img_url": "\/auth\/upload\/testimonial\/rajesh_mani_ji.jpg",
+        "quote": "",
+        "visibility": true
+    },
+    {
+        "name": "Shri Shiv Pratap Shukla",
+        "about": "Governor of Himachal Pradesh",
+        "social_links": "",
+        "img_url": "https://ypa4india.org/assets/json/testimonial/uploads/ssps.jpeg",
+        "quote": "\u092f\u0942\u0925 \u092a\u0949\u0935\u0930 \u090f\u0938\u094b\u0938\u093f\u090f\u0936\u0928 \u0915\u0940 \u091c\u0932 \u0939\u0948 \u0924\u094b \u0915\u0932 \u0939\u0948 \u092e\u0941\u0939\u0940\u092e \u0905\u0924\u094d\u092f\u0902\u0924 \u0939\u0940 \u092a\u094d\u0930\u0936\u0902\u0938\u0928\u0940\u092f \u0939\u0948 l \u092f\u0939 \u092f\u0941\u0935\u093e\u0913\u0902 \u0915\u094b \u091c\u094b\u095c\u0915\u0930 \u091c\u0932 \u0938\u0902\u0930\u0915\u094d\u0937\u0923 \u0915\u0947 \u092a\u094d\u0930\u0924\u093f \u091c\u093e\u0917\u0930\u0942\u0915 \u0915\u0930\u0915\u0947 \u0938\u092e\u093e\u091c \u0915\u094b \u091c\u0932 \u0938\u0902\u0930\u0915\u094d\u0937\u0923  \u0915\u0947 \u0932\u093f\u090f \u092a\u094d\u0930\u0947\u0930\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u094d\u092f \u0915\u0930 \u0930\u0939\u093e \u0939\u0948 l ",
+        "visibility": true
+    }
+]

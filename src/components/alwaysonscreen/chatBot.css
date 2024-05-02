@@ -1,0 +1,65 @@
+#callback_request {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  cursor: none;
+}
+#callback_request:hover {
+  animation: scaleandrotate 0.3s ease-out;
+}
+
+#callback_requested {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  animation: scaleandrotate 0.3s ease-out;
+  cursor: pointer;
+}
+
+#callback_requested:hover {
+  animation: scaleandrotate 0.3s ease-out;
+}
+.top-head-callback-toddle {
+  width: 100%;
+  height: 50px;
+  background: #294f93;
+  border: 1px solid inherit;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.callback-form-toggle {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  background-image: url("/public/callback-formbg-4x3.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  /* margin-right: 200px; */
+  /* background-attachment: fixed; */
+  border: 1px solid #294f93;
+  border-radius: 5px 5px 5px 0px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  display: none;
+
+  animation: scaleanimation 0.3s ease-out;
+}
+@keyframes scaleandrotate {
+  from {
+    transform: scale(1);
+    transform: rotate(90deg);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes scaleanimation {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1.1);
+  }
+}

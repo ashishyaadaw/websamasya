@@ -1,0 +1,16 @@
+.no-input-box input,
+textarea {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+}
+.no-input-box input:focus,
+textarea:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+body{
+    overflow-x:hidden;
+}
